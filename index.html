@@ -94,6 +94,32 @@
 								Also, I built a small command line interface where you can classify images locally, which you can access at <a target="_blank" style="color:rgb(145, 145, 255);" href="https://github.com/cgeils25/Immune_Cell_Image_Classification?tab=readme-ov-file">this repo</a>.
 							</p>
 							<span class="image main"><img src="images/immune_cell_image_classification_figure.png" alt="" /></span>
+							<h3>Classifying Medical Abstracts Using Different NLP Techniques</h3>
+							<p>
+								I attempted to use different supervised learning techniques to reproduce results from <a target="_blank" style="color:rgb(145, 145, 255);" href="https://dl.acm.org/doi/10.1145/3582768.3582795">this paper</a> to classify medical abstracts into one of five topics. The best accuracy was achieved using a 
+								fine-tuned clinical BERT model. Not my best models, but hey, I learned how (and how not) to do NLP stuff...
+							</p>
+
+							<style>
+								.small-italic {
+									font-size: 0.8em; /* Adjust as needed */
+									font-style: italic;
+								}
+							</style>
+
+							<div class = "small-italic">
+								<p>BoW = Bag of Words
+									<br>SVC = Support Vector Classification
+									<br>LR = (Multiclass) Logistic Regression
+									<br>RF = Random Forest
+									<br>Word2Vec = averaged pre-trained word embeddings
+									<br>ScispaCy = word embeddings pre-trained on biomedical text
+									<br>BERT = Bidirectional Encoder Representations from Transformers (an LLM)
+								</p>
+							</div>
+							<span class="image main"><img src="images/medical_nlp_models.png" alt="" /></span>
+							
+							
 							<h3>Modeling Potency of CYP2D6 Inhibitors</h3>
 							<p>
 								I used a balanced random forest to model inhibition coefficient values for compounds targeting the CYP2D6 enzyme (data obtained from ChEMBL).
